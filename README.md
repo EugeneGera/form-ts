@@ -25,14 +25,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### 'npm run check:ts'
+### `npm run check:ts`
 
 Run check typescript errors.
 
-### 'npm run format'
+### `npm run format`
 
 Run prettier formatter.
 
-### 'npm run lint:fix'
+### `npm run lint:fix`
 
 Run eslint fix.
