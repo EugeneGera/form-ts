@@ -10,19 +10,24 @@ export const Input = <
     label: string;
     type: string;
     placeholder?: string;
-    errorMessage: string | undefined
+    errorMessage: string | undefined;
 }) => {
     const { field } = useController({
         name: props.name,
         control: props.control,
     });
     return (
-        <label className={classNames("relative", props.className)}>
+        <label className={classNames('relative', props.className)}>
             <div className="mt-6 text-sm">{props.label}</div>
-            <div className={classNames("mt-0.5 rounded-md border transition-colors  shadow-sm text-sm w-full sm:w-64 py-2 px-3 ", {
-                'border-gray-300 hover:border-blue-500': !props.errorMessage,
-                'border-pink-600': props.errorMessage,
-            })}>
+            <div
+                className={classNames(
+                    'mt-0.5 rounded-md border transition-colors  shadow-sm text-sm w-full sm:w-64 py-2 px-3 ',
+                    {
+                        'border-gray-300 hover:border-blue-500': !props.errorMessage,
+                        'border-pink-600': props.errorMessage,
+                    }
+                )}
+            >
                 <input
                     {...field}
                     type={props.type}
