@@ -2,7 +2,7 @@ import { Fragment, ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 
 export const Modal = (props: {
-    title:string
+    title: string;
     check?: VoidFunction;
     isOpen: boolean;
     onClose: VoidFunction;
@@ -16,6 +16,7 @@ export const Modal = (props: {
         }
         props.onClose();
     };
+
     return ReactDOM.createPortal(
         <Fragment>
             <div className="fixed inset-0">

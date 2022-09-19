@@ -53,7 +53,7 @@ export const MyForm = () => {
         getValues,
         setValue,
         watch,
-        reset
+        reset,
     } = useForm<FormValues>({
         defaultValues: {
             firstName: '',
@@ -79,7 +79,10 @@ export const MyForm = () => {
         setIsOpen(false);
     };
     return (
-        <form className="sm:mt-32 sm:ml-64 my-6 mx-4 max-w-2xl relative z-0" onSubmit={handleSubmit(onSubmit)}>
+        <form
+            className="sm:mt-32 sm:ml-64 my-6 mx-4 max-w-2xl relative z-0"
+            onSubmit={handleSubmit(onSubmit)}
+        >
             <h2 className="text-4xl">Анкета соискателя</h2>
             <h2 className="mt-10 text-2xl">Личные данные</h2>
             <div className="sm:grid sm:grid-cols-2 gap-x-10 gap-y-1 sm:items-start mt-3">
