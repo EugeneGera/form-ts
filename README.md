@@ -1,3 +1,6 @@
+Stack: React, TypeScript, TailwindCSS.
+In this project, a form is implemented using the [react-hook-form](https://react-hook-form.com/) library, and form validation [yup](https://github.com/jquense/yup) is also used.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -21,3 +24,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+### 'npm run check:ts'
+
+Run check typescript errors.
+
+### 'npm run format'
+
+Run prettier formatter.
+
+### 'npm run lint:fix'
+
+Run eslint fix.
