@@ -1,5 +1,6 @@
+import { Control, FieldPath, useController } from 'react-hook-form';
+
 import classNames from 'classnames';
-import { useController, Control, FieldPath } from 'react-hook-form';
 export const Input = <
     TFieldValues extends Record<string, any> = Record<string, any>,
     TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>

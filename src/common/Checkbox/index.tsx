@@ -1,4 +1,4 @@
-import { useController, FieldPath, Control } from 'react-hook-form';
+import { Control, FieldPath, useController } from 'react-hook-form';
 export const Checkbox = <
     TFieldValues extends Record<string, any> = Record<string, any>,
     TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>

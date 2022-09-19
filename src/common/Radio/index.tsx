@@ -1,5 +1,6 @@
+import { Control, FieldPath, useController } from 'react-hook-form';
+
 import classNames from 'classnames';
-import { useController, FieldPath, Control } from 'react-hook-form';
 
 export const Radio = <
     TFieldValues extends Record<string, any> = Record<string, any>,
