@@ -23,9 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "check:ts": "tsc --noEmit",
-    "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.{json,{j,t}s{,x},scss,}\""
   },
   "eslintConfig": {
